@@ -21,7 +21,7 @@ Patchfoo depends on the `ssb-server` command being available. You can install th
 your machine via [npm](https://npmjs.org)
 
 ```
-$ npm install --global scuttlebot
+$ npm install --global ssb-server
 ```
 
 or by following the [scuttlebot installation
@@ -53,6 +53,16 @@ special ssb-based registry called
 You can follow the guide [ssb-npm 101](https://github.com/noffle/ssb-npm-101) to
 get the registry set up and running locally, as well installing the `ssb-npm`
 command.
+
+# Install `ssb-private` plugin
+
+Patchfoo depends on `ssb-private` plugin to index private messages.
+
+```sh
+ssb-server plugins.install ssb-private --yes
+ssb-server plugins.enable ssb-private
+# restart ssb-server
+```
 
 # Install patchfoo
 
